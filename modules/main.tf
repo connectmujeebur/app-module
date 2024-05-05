@@ -2,11 +2,12 @@ provider "azurerm" {
   features {}
 
 # we have better option to to avoid giving secrets like this
+# Provide your subscription and other details as shown below to have your connectivity
 
   subscription_id = var.subscription_id
-  client_id       = "2cd121f8-c290-4683-b223-788268ad1714"
-  tenant_id       = "d26a657f-22cc-48ff-9da2-31c89f842f91"
-  client_secret   = "EJT8Q~ppyjOrMbYzNOMwRAupCxqN.3Rhj~06vdnT"
+  client_id       = "XXXXXXX"
+  tenant_id       = "XXXX"
+  client_secret   = "XXXXXXX"
 }
 
 resource "azurerm_resource_group" "rg1" {
